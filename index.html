@@ -5,63 +5,205 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TACOS LOCOS 超狂塔可 | 台北花博亡靈節限定</title>
     <style>
-        /* 基礎網頁樣式設定 (深色節慶風格) */
-        body { font-family: 'Arial', sans-serif; background-color: #1a1a1a; color: #ffffff; text-align: center; padding: 20px; line-height: 1.6; }
-        h1 { color: #ff007f; text-shadow: 0 0 10px #ff007f; } /* 模擬霓虹視覺 */
-        .container { max-width: 600px; margin: 0 auto; }
-        .section { background: #2d2d2d; margin: 20px 0; padding: 20px; border-radius: 12px; border: 1px solid #444; }
-        .price { color: #ffd700; font-weight: bold; font-size: 1.1em; }
-        .upgrade { color: #ff4500; font-weight: bold; }
-        .btn-line { display: inline-block; margin-top: 15px; padding: 15px 30px; background-color: #06C755; color: white; text-decoration: none; border-radius: 30px; font-weight: bold; font-size: 1.2em; }
-        .btn-line:hover { background-color: #05a044; }
-        .faq-item { margin-bottom: 15px; text-align: left; }
+        body {
+            background-color: #0d0d13;
+            color: #fff;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(20, 20, 30, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid #ff007f;
+            box-shadow: 0 0 20px #ff007f, inset 0 0 10px #ff007f;
+        }
+        h1 {
+            color: #ff007f;
+            text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f;
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            color: #00f0ff;
+            text-shadow: 0 0 10px #00f0ff;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+        .menu-section {
+            border-top: 1px dashed #ff9900;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        h2 {
+            color: #ff9900;
+            text-shadow: 0 0 10px #ff9900;
+        }
+        .price-list {
+            text-align: left;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        /* 下拉式選單 表單樣式 */
+        .order-form {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid #00f0ff;
+            border-radius: 10px;
+            text-align: left;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            color: #00f0ff;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        select, input {
+            width: 100%;
+            padding: 12px;
+            background-color: #1a1a26;
+            border: 1px solid #ff9900;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+        select:focus, input:focus {
+            outline: none;
+            border-color: #ff007f;
+            box-shadow: 0 0 10px #ff007f;
+        }
+        /* 按鈕樣式 */
+        .btn-line {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #06C755;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(6, 199, 85, 0.4);
+            transition: 0.3s;
+            box-sizing: border-box;
+            margin-top: 10px;
+        }
+        .btn-line:hover {
+            background-color: #05b34c;
+            box-shadow: 0 4px 25px rgba(6, 199, 85, 0.7);
+            transform: translateY(-2px);
+        }
+        .faq-section {
+            text-align: left;
+            margin-top: 40px;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+        }
+        .faq-title {
+            color: #ff9900;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- 1. 視覺與首圖區塊 (Hero Section) -->
-        <header>
-            <h1>💀 TACOS LOCOS 超狂塔可 💀</h1>
-            <h3>台北花博「墨西哥亡靈節」期間限定攤位</h3>
-            <p>感受道地墨西哥亡靈節慶典，線上預訂、現場免排隊取餐！🌮🔥</p>
-        </header>
 
-        <!-- 2. 精簡菜單與加價策略 (Product & Price) -->
-        <div class="section">
-            <h2>【經典起司口味 CHEESE】</h2>
-            <p>脆皮塔可：<span class="price">$200</span></p>
-            <p>墨西哥餡餅：<span class="price">$200</span></p>
-            <p>起司玉米片：<span class="price">$150</span></p>
-            <p>墨西哥炸餃：<span class="price">$150</span></p>
-            <hr style="border-color: #444; margin: 15px 0;">
-            <h3 class="upgrade">🔥 必吃升級推薦 🔥</h3>
-            <p>所有品項皆可 <strong>+50 元</strong> 升級為「祕製香料慢燉豬肉（PORK）」組合，口感層次大爆發！</p>
-        </div>
+<div class="container">
+    <h1>💀 TACOS LOCOS 超狂塔可 💀</h1>
+    <div class="subtitle">台北花博「墨西哥亡靈節」期間限定攤位</div>
+    <p>感受道地墨西哥亡靈節慶典，線上預訂、現場免排隊取餐！🌮🔥</p>
 
-        <!-- 3. OMO 虛實整合收單按鈕 (Place & Promotion) -->
-        <div class="section">
-            <h2>免排隊！AI 明星店員為您服務</h2>
-            <p>現場排隊人潮滿滿？現在就透過 LINE 線上預約，取餐最快速！</p>
-            <!-- ⚠️ 請將下方的 # 替換成您真實的 LINE OA 連結 ⚠️ -->
-            <a href="#" class="btn-line">👉 點我啟動 AI 店員，立即線上訂餐</a>
+    <div class="menu-section">
+        <h2>【經典起司口味 CHEESE】</h2>
+        <div class="price-list">
+            • 脆皮塔可：$200 <br>
+            • 墨西哥餡餅：$200 <br>
+            • 起司玉米片：$150 <br>
+            • 墨西哥炸餃：$150
         </div>
-
-        <!-- 4. 塔可萬用 FAQ (消除消費疑慮) -->
-        <div class="section">
-            <h2>常見問題 FAQ</h2>
-            <div class="faq-item">
-                <strong>Q: 塔可是什麼？</strong><br>
-                A: 是一種用薄餅包餡、方便徒手食用的墨西哥料理。
-            </div>
-            <div class="faq-item">
-                <strong>Q: 塔可有辣嗎？</strong><br>
-                A: 可以有辣，也可以做不辣或微辣版本，可以客製調整。
-            </div>
-            <div class="faq-item">
-                <strong>Q: 可以外帶嗎？</strong><br>
-                A: 大多數塔可都很適合外帶，因為本來就是方便拿取的街頭食物。
-            </div>
-        </div>
+        <p style="color: #ff9900; font-weight: bold;">🔥 必吃升級推薦：所有品項皆可 +50 元升級為「祕製香料慢燉豬肉（PORK）」組合！</p>
     </div>
+
+    <div class="order-form">
+        <h2 style="margin-top:0; color:#00f0ff; text-align:center;">⚡ 預約免排隊點餐選單 ⚡</h2>
+        
+        <div class="form-group">
+            <label for="food">1. 選擇超狂主餐</label>
+            <select id="food">
+                <option value="taco">脆皮塔可 (HARD SHELL TACO)</option>
+                <option value="quesadilla">墨西哥餡餅 (QUESADILLA)</option>
+                <option value="nachos">起司玉米片 (CHEESE NACHOS)</option>
+                <option value="empanadita">墨西哥炸餃 (EMPANADITA)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="flavor">2. 選擇靈魂口味</label>
+            <select id="flavor">
+                <option value="cheese">經典濃郁起司基本款 (原價)</option>
+                <option value="pork">🔥 升級祕製慢燉豬肉 (+$50)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="time">3. 預計到攤位取餐時間</label>
+            <select id="time">
+                <option value="12:00">12:00 - 13:00</option>
+                <option value="13:00">13:00 - 14:00</option>
+                <option value="14:00">14:00 - 15:00</option>
+                <option value="15:00">15:00 - 16:00</option>
+                <option value="16:00">16:00 - 17:00</option>
+                <option value="17:00">17:00 - 18:00</option>
+                <option value="18:00">18:00 - 19:00</option>
+                <option value="19:00">19:00 - 20:00</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">4. 輸入領餐人手機號碼</label>
+            <input type="tel" id="phone" placeholder="例如：0912345678" required>
+        </div>
+
+        <button class="btn-line" onclick="sendOrder()">👉 送出選單，啟動 AI 店員接單</button>
+    </div>
+
+    <div class="faq-section">
+        <h2>常見問題 FAQ</h2>
+        <p><span class="faq-title">Q: 塔可是什麼？</span><br>A: 是一種用薄餅包餡、方便徒手食用的墨西哥料理。</p>
+        <p><span class="faq-title">Q: 塔可有辣嗎？</span><br>A: 可以有辣，也可以做不辣或微辣版本，可以客製調整。</p>
+        <p><span class="faq-title">Q: 可以外帶嗎？</span><br>A: 大多數塔可都很適合外帶，因為本來就是方便拿取的街頭食物。</p>
+    </div>
+</div>
+
+<script>
+    // 模擬將下拉選單資料串接至 LINE OA 的簡易互動
+    function sendOrder() {
+        var food = document.getElementById('food').options[document.getElementById('food').selectedIndex].text;
+        var flavor = document.getElementById('flavor').options[document.getElementById('flavor').selectedIndex].text;
+        var time = document.getElementById('time').value;
+        var phone = document.getElementById('phone').value;
+
+        if(!phone) {
+            alert('請填寫手機號碼，以便 AI 店員為您保留餐點喔！💀');
+            return;
+        }
+
+        alert('💀【TACOS LOCOS 系統通知】💀\n\n已成功將您的預選單資料傳輸！\n主餐：' + food + '\n口味：' + flavor + '\n取餐時間：' + time + '\n\n點選確定後，系統將為您跳轉至 LINE 官方帳號由明星 AI 店員為您完成最終確認！🔥');
+        // 這裡未來可以放你們小組的 LINE OA 連結
+        window.location.href = "https://line.me/R/ti/p/@your_line_oa"; 
+    }
+</script>
+
 </body>
 </html>

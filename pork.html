@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>TACOS LOCOS - 慢燉豬肉限定</title>
+    <style>
+        /* 火山熔岩風格配色 */
+        body { background-color: #2b0000; color: #ffcc00; font-family: sans-serif; text-align: center; padding: 20px; }
+        h1 { color: #ff4500; text-shadow: 2px 2px #000; }
+        .promo-box { border: 3px solid #ff4500; padding: 15px; margin: 20px auto; width: 80%; background: #4a0000; border-radius: 10px; }
+        select { width: 90%; padding: 10px; font-size: 16px; margin: 10px 0; background: #ffdead; }
+    </style>
+</head>
+<body>
+
+    <h1>💀 祕製慢燉豬肉限定通道 💀</h1>
+    <div class="promo-box">
+        <p>慢火燉煮 12 小時的職人靈魂，現正限定販售！</p>
+    </div>
+
+    <form id="orderForm">
+        <label>選購主餐：</label>
+        <select id="flavor">
+            <option value="pork" selected>🔥 祕製香料慢燉豬肉 (升級版)</option>
+        </select>
+        <br>
+        <input type="text" placeholder="輸入您的手機號碼" required>
+        <button type="submit" style="padding: 10px 20px; background: #ff4500; color: white;">確認下單</button>
+    </form>
+
+    <script>
+        window.onload = function() {
+            // 自動鎖定且提示
+            document.getElementById('flavor').disabled = true;
+            alert("Amigo! 檢測到您是慢燉豬肉狂熱者，系統已為您鎖定『祕製香料慢燉豬肉』加購選項！🔥");
+        };
+    </script>
+</body>
+</html>

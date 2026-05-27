@@ -1,0 +1,27 @@
+<div class="menu-selection-container" style="background-color: #1a1a1a; color: #fff; padding: 20px; border-radius: 8px; border: 2px solid #fff200;">
+    <h3 style="color: #fff200; font-family: 'Arial Black', sans-serif;">🌮 TACOS LOCOS 天母市集線上預訂</h3>
+    
+    <label for="package">1. 選擇超狂方案：</label><br>
+    <select id="package" name="package" style="width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 15px; border-radius: 4px;">
+        <option value="single">超狂塔可單人餐 (任選1主食+1莎莎) - $150</option>
+        <option value="double">雙拼塔可雙人分享餐 (2份主食+2莎莎+2飲料) - $350</option>
+        <option value="family">天母限定！親子快樂分享餐 (起司玉米片+2塔可+2飲料) - $450</option>
+        <option value="nachos">超狂肉醬起司 Nachos (單點) - $100</option>
+        <option value="cheese_nachos">小孩最愛！起司瀑布玉米片 (單點) - $120</option>
+    </select>
+
+    <label for="meat">2. 選擇主食風味：</label><br>
+    <select id="meat" name="meat" style="width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 15px; border-radius: 4px;">
+        <option value="pork">經典手撕正宗慢燉豬 (Pulled Pork)</option>
+        <option value="chicken">墨西哥香料烤雞</option>
+        <option value="veggie">手作香料蔬食 (素食友善)</option>
+        <option value="double_meat">【天母老饕最愛】肉量超狂加倍 (+$50)</option>
+    </select>
+
+    <label for="salsa">3. 選擇特製莎莎醬：</label><br>
+    <select id="salsa" name="salsa" style="width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 15px; border-radius: 4px;">
+        <option value="tomato">經典番茄莎莎 (微辣 🌶️)</option>
+        <option value="mango">鳳梨芒果莎莎 (清爽不辣 🍍)</option>
+        <option value="crazy_hot">超狂大辣醬 (重度嗜辣 🔥🔥🔥)</option>
+    </select>
+</div>

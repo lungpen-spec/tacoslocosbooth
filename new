@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TACOS LOCOS 超狂塔可 | 台北花博亡靈節限定</title>
+    <style>
+        body {
+            background-color: #0d0d13;
+            color: #fff;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(20, 20, 30, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid #ff007f;
+            box-shadow: 0 0 20px #ff007f, inset 0 0 10px #ff007f;
+        }
+        h1 {
+            color: #ff007f;
+            text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f;
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            color: #00f0ff;
+            text-shadow: 0 0 10px #00f0ff;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+        .menu-section {
+            border-top: 1px dashed #ff9900;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        h2 {
+            color: #ff9900;
+            text-shadow: 0 0 10px #ff9900;
+        }
+        .price-list {
+            text-align: left;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        .order-form {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid #00f0ff;
+            border-radius: 10px;
+            text-align: left;
+        }
+        .google-form-frame {
+            width: 100%;
+            min-height: 760px;
+            border: 0;
+            border-radius: 8px;
+            background: #fff;
+        }
+        .faq-section {
+            text-align: left;
+            margin-top: 40px;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+        }
+        .faq-title {
+            color: #ff9900;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>💀 TACOS LOCOS 超狂塔可 💀</h1>
+    <div class="subtitle">台北花博「墨西哥亡靈節」期間限定攤位</div>
+    <p>感受道地墨西哥亡靈節慶典，線上預訂、現場免排隊取餐！🌮🔥</p>
+
+    <div class="menu-section">
+        <h2>【經典起司口味 CHEESE】</h2>
+        <div class="price-list">
+            • 脆皮塔可：$200 <br>
+            • 墨西哥餡餅：$200 <br>
+            • 起司玉米片：$150 <br>
+            • 墨西哥炸餃：$150
+        </div>
+        <p style="color: #ff9900; font-weight: bold;">🔥 必吃升級推薦：所有品項皆可 +50 元升級為「祕製香料慢燉豬肉（PORK）」組合！</p>
+    </div>
+
+    <div class="order-form">
+        <h2 style="margin-top:0; color:#00f0ff; text-align:center;">⚡ 預約免排隊點餐選單 ⚡</h2>
+        <iframe
+            class="google-form-frame"
+            src="https://docs.google.com/forms/d/1l0S4LprtEWtBYLyUfv294V_qCQOXdqfO-IClFEGBTpQ/viewform?embedded=true"
+            loading="lazy">
+            載入中...
+        </iframe>
+    </div>
+
+    <div class="faq-section">
+        <h2>常見問題 FAQ</h2>
+        <p><span class="faq-title">Q: 塔可是什麼？</span><br>A: 是一種用薄餅包餡、方便徒手食用的墨西哥料理。</p>
+        <p><span class="faq-title">Q: 塔可有辣嗎？</span><br>A: 可以有辣，也可以做不辣或微辣版本，可以客製調整。</p>
+        <p><span class="faq-title">Q: 可以外帶嗎？</span><br>A: 大多數塔可都很適合外帶，因為本來就是方便拿取的街頭食物。</p>
+    </div>
+</div>
+
+</body>
+</html>
